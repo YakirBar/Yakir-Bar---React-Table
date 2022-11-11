@@ -31,7 +31,7 @@ const ReactTable = ({ data, setData }) => {
                 columns: [
                     {
                         Header: '#',
-                        accessor: (cell, index) => index,
+                        accessor: (cell) => cell.id,
                     },
                     {
                         Header: 'First Name',
