@@ -55,6 +55,7 @@ const App = () => {
 
         for (let i = 0; i < users.length; i++) {
             handleData.push({
+                id: i, 
                 ...users[i],
                 subRows: banks[i].data.content.list
             })

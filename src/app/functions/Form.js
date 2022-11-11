@@ -16,6 +16,7 @@ const Form = ({ data, setData, row, open, setOpen }) => {
             if (parseInt(row) === i) {
                 newData.push({
                     ...values,
+                    id: data[i].id,
                     lastLoginDate: data[i].lastLoginDate,
                     organizationCode: data[i].organizationCode,
                     userId: data[i].userId
